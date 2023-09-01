@@ -38,6 +38,10 @@ select {
   height: 24px;
 }
 
+span {
+  color: var(--primaryColor);
+}
+
 @media (max-width: 600px) {
   form,
   #resultado {

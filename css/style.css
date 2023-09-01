@@ -1,0 +1,46 @@
+:root {
+  --pxPadrao: 20px;
+  --primaryColor: rgb(68, 68, 68);
+  --secondaryColor: rgb(196, 196, 196);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-wrap: wrap;
+}
+form,
+#resultado {
+  display: flex;
+  flex-direction: column;
+  padding: var(--pxPadrao);
+  width: 48%;
+  max-width: 500px;
+  margin: 10px auto;
+  background-color: var(--secondaryColor);
+  border-radius: 20px;
+}
+#resultado {
+  display: none;
+}
+.labelGroup {
+  margin-bottom: var(--pxPadrao);
+}
+input,
+select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  height: 24px;
+}
+
+@media (max-width: 600px) {
+  form,
+  #resultado {
+    width: 90%;
+  }
+}

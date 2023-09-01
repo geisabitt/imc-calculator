@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calcule o seu indice corporal grátis">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div id="resultado"></div>
+    <form>
+        <div class="labelGroup">
+            <label for="name">Nome:</label>
+            <input class="form-control" id="name" name="name" type="text">
+        </div>
+        <div class="labelGroup">
+            <label for="gender">Sexo:</label>
+            <select class="form-control" id="gender" name="gender" type="text">
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+        <div class="labelGroup">
+            <label for="age">Idade:</label>
+            <input class="form-control" id="age" name="age" type="text">
+        </div>
+        <div class="labelGroup">
+            <label for="height">Altura:</label>
+            <input class="form-control" id="height" name="height" type="text">
+        </div>
+        <div class="labelGroup">
+            <label for="weight">Peso:</label>
+            <input class="form-control" id="weight" name="weight" type="text">
+        </div>
+        <button id="btnCalculation" class="btn btn-success">Calcular</button>
+    </form>
+</body>
+</html>
